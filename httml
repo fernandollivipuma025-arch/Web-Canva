@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="es">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260917-05-f0c5fe2","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Universe</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #f6f5ff;
+      --muted: #b9b8d5;
+      --panel: rgba(10, 12, 38, 0.76);
+      --electric: #42e8ff;
+      --violet: #8b5cf6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      margin: 0;
+      color: var(--ink);
+      font-family: "Raleway", sans-serif;
+      overflow-x: hidden;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid #42e8ff;
+      outline-offset: 4px;
+    }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .star-field {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.48;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(255,255,255,.9) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 76% 10%, rgba(93,225,255,.8) 0 1px, transparent 1.8px),
+        radial-gradient(circle at 88% 65%, rgba(255,255,255,.8) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 32% 76%, rgba(154,103,255,.9) 0 1px, transparent 1.9px);
+      background-size: 170px 170px, 240px 240px, 210px 210px, 280px 280px;
+      animation: drift 18s linear infinite;
+    }
+
+    .site-header {
+      background: rgba(5, 7, 24, 0.72);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(160, 157, 255, 0.22);
+    }
+
+    .brand-mark {
+      font-family: "Space Mono", monospace;
+      letter-spacing: .12em;
+      text-shadow: 0 0 22px rgba(66, 232, 255, .75);
+    }
+
+    .nav-link {
+      border: 1px solid transparent;
+      color: var(--muted);
+      transition: color .25s ease, background .25s ease, border-color .25s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #fff;
+      border-color: rgba(66, 232, 255, .55);
+      background: rgba(66, 232, 255, .11);
+    }
+
+    .page-view {
+      display: none;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh) - 78px);
+      animation: enter .55s ease both;
+    }
+
+    .page-view.active { display: flex; }
+
+    .hero-stage {
+      position: relative;
+      overflow: hidden;
+      background: #07091c;
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .72;
+      filter: saturate(1.15) contrast(1.1);
+      transform: scale(1.04);
+      animation: slowZoom 14s ease-in-out infinite alternate;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(5, 6, 25, .96) 0%, rgba(7, 8, 30, .75) 48%, rgba(5, 7, 22, .24) 100%),
+        linear-gradient(0deg, rgba(4, 5, 18, .75), transparent 45%);
+    }
+
+    .orbit {
+      position: absolute;
+      border: 1px solid rgba(105, 229, 255, .28);
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .orbit-one {
+      width: 420px;
+      height: 420px;
+      right: -140px;
+      top: 12%;
+      animation: spin 26s linear infinite;
+    }
+
+    .orbit-two {
+      width: 660px;
+      height: 660px;
+      right: -280px;
+      top: -8%;
+      border-color: rgba(167, 114, 255, .2);
+      animation: spin 38s linear infinite reverse;
+    }
+
+    .signal-dot {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 46px;
+      left: 44px;
+      border-radius: 50%;
+      background: var(--electric);
+      box-shadow: 0 0 20px var(--electric);
+    }
+
+    .eyebrow {
+      font-family: "Space Mono", monospace;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .glow-button {
+      box-shadow: 0 0 0 1px rgba(66, 232, 255, .25), 0 12px 35px rgba(34, 198, 255, .24);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .glow-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 0 1px rgba(66, 232, 255, .6), 0 18px 42px rgba(34, 198, 255, .36);
+    }
+
+    .catalog-stage {
+      background: linear-gradient(145deg, #07091d 0%, #111047 48%, #090a28 100%);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.15rem;
+    }
+
+    .setup-card {
+      border: 1px solid rgba(183, 182, 255, .24);
+      background: rgba(11, 13, 43, .82);
+      overflow: hidden;
+      transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+    }
+
+    .setup-card:hover,
+    .setup-card:focus-within {
+      transform: translateY(-8px);
+      border-color: rgba(66, 232, 255, .75);
+      box-shadow: 0 22px 45px rgba(0, 0, 0, .36), 0 0 28px rgba(66, 232, 255, .12);
+    }
+
+    .setup-image {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      transition: transform .45s ease, filter .45s ease;
+    }
+
+    .setup-card:hover .setup-image {
+      transform: scale(1.07);
+      filter: saturate(1.22);
+    }
+
+    .scanline {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(66,232,255,.9), transparent);
+      opacity: .6;
+    }
+
+    .page-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.35);
+      transition: width .25s ease, background .25s ease;
+    }
+
+    .page-dot.active {
+      width: 28px;
+      background: #42e8ff;
+      box-shadow: 0 0 14px #42e8ff;
+    }
+
+    @keyframes drift {
+      from { background-position: 0 0, 20px 30px, 0 50px, 40px 0; }
+      to { background-position: 170px 150px, -220px 270px, 200px -160px, -230px 260px; }
+    }
+
+    @keyframes slowZoom {
+      from { transform: scale(1.04); }
+      to { transform: scale(1.15); }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes enter {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-content { padding-top: 4rem; padding-bottom: 4rem; }
+    }
+
+    @media (max-width: 560px) {
+      .catalog-grid { grid-template-columns: 1fr; }
+      .setup-image { height: 230px; }
+      .site-header-inner { align-items: flex-start; }
+      .orbit-one { right: -220px; }
+    }
+  </style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/a558f474cd01d324.resizing_sdk.js" type="text/javascript" integrity="sha512-evIEjzvRDdaV6tHT4THeYa18+ppfgUj4Zpx5W8R1gaF2VKcOba7TPP4x2YYqsfThPwuC5NaBFyUH6V81c3i8kA=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="app-shell">
+   <div class="star-field" aria-hidden="true"></div>
+   <header data-template-id="site-header" class="site-header canva-header sticky top-0 z-30 w-full">
+    <div class="site-header-inner mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8"><button type="button" class="brand-mark flex items-center gap-2 text-sm font-bold text-white" data-page-target="home" aria-label="Ir al inicio"> <i data-lucide="orbit" class="h-5 w-5 text-cyan-300"></i> <span data-template-id="brand-name" class="canva-text"></span> </button>
+     <nav aria-label="Navegación principal" class="flex items-center gap-2"><button data-template-id="nav-home" type="button" class="nav-link canva-button rounded-full px-3 py-2 text-xs font-bold sm:px-4" data-page-target="home" aria-current="page"></button> <button data-template-id="nav-setups" type="button" class="nav-link canva-button rounded-full px-3 py-2 text-xs font-bold sm:px-4" data-page-target="setups"></button>
+     </nav>
+    </div>
+   </header>
+   <main>
+    <section id="home-page" class="page-view hero-stage active items-center" aria-labelledby="hero-title"><img data-template-id="hero-image" class="hero-photo canva-image" loading="lazy">
+     <div class="hero-overlay" aria-hidden="true"></div>
+     <div class="orbit orbit-one" aria-hidden="true">
+      <span class="signal-dot"></span>
+     </div>
+     <div class="orbit orbit-two" aria-hidden="true"></div>
+     <div class="hero-content relative z-10 mx-auto w-full max-w-7xl px-6 py-16 sm:px-10 lg:px-14">
+      <div class="max-w-3xl">
+       <p data-template-id="hero-eyebrow" class="eyebrow canva-text mb-6 text-xs font-bold text-cyan-200"></p>
+       <h1 id="hero-title" data-template-id="hero-title-text" tabindex="-1" class="canva-text max-w-3xl font-black leading-[.93] tracking-tight"></h1>
+       <div class="scanline my-7 max-w-lg"></div>
+       <p data-template-id="hero-description" class="canva-text max-w-xl text-base leading-7 sm:text-lg"></p><button data-template-id="hero-cta" type="button" class="glow-button canva-button mt-9 inline-flex items-center gap-3 rounded-full px-6 py-4 font-bold" data-page-target="setups"> <span data-template-id="hero-cta-label" class="canva-text"></span> <i data-lucide="arrow-right" class="h-5 w-5" aria-hidden="true"></i> </button>
+      </div>
+      <aside class="mt-16 flex max-w-md items-center gap-4 border-l border-cyan-300/50 pl-4" aria-label="Detalle de experiencia"><i data-lucide="sparkles" class="h-6 w-6 shrink-0 text-cyan-300" aria-hidden="true"></i>
+       <p data-template-id="hero-detail" class="canva-text text-sm leading-6"></p>
+      </aside>
+     </div>
+    </section>
+    <section id="setups-page" class="page-view catalog-stage items-center py-12 sm:py-16" aria-labelledby="catalog-title">
+     <div class="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-14">
+      <div class="mb-10 flex flex-col justify-between gap-5 border-b border-violet-300/20 pb-7 md:flex-row md:items-end">
+       <div class="max-w-2xl">
+        <p data-template-id="catalog-eyebrow" class="eyebrow canva-text mb-4 text-xs font-bold text-cyan-200"></p>
+        <h2 id="catalog-title" data-template-id="catalog-title-text" tabindex="-1" class="canva-text font-black tracking-tight"></h2>
+       </div>
+       <p data-template-id="catalog-description" class="canva-text max-w-md text-sm leading-6 md:text-right"></p>
+      </div>
+      <div class="catalog-grid">
+       <article data-template-id="setup-card-1" class="setup-card canva-card rounded-2xl">
+        <div class="overflow-hidden"><img data-template-id="setup-image-1" class="setup-image canva-image" loading="lazy">
+        </div>
+        <div class="p-5">
+         <p data-template-id="setup-tag-1" class="canva-tag mb-3 inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"></p>
+         <h3 data-template-id="setup-title-1" class="canva-text font-bold"></h3>
+         <p data-template-id="setup-description-1" class="canva-text mt-3 text-sm leading-6"></p>
+        </div>
+       </article>
+       <article data-template-id="setup-card-2" class="setup-card canva-card rounded-2xl">
+        <div class="overflow-hidden"><img data-template-id="setup-image-2" class="setup-image canva-image" loading="lazy">
+        </div>
+        <div class="p-5">
+         <p data-template-id="setup-tag-2" class="canva-tag mb-3 inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"></p>
+         <h3 data-template-id="setup-title-2" class="canva-text font-bold"></h3>
+         <p data-template-id="setup-description-2" class="canva-text mt-3 text-sm leading-6"></p>
+        </div>
+       </article>
+       <article data-template-id="setup-card-3" class="setup-card canva-card rounded-2xl">
+        <div class="overflow-hidden"><img data-template-id="setup-image-3" class="setup-image canva-image" loading="lazy">
+        </div>
+        <div class="p-5">
+         <p data-template-id="setup-tag-3" class="canva-tag mb-3 inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"></p>
+         <h3 data-template-id="setup-title-3" class="canva-text font-bold"></h3>
+         <p data-template-id="setup-description-3" class="canva-text mt-3 text-sm leading-6"></p>
+        </div>
+       </article>
+       <article data-template-id="setup-card-4" class="setup-card canva-card rounded-2xl">
+        <div class="overflow-hidden"><img data-template-id="setup-image-4" class="setup-image canva-image" loading="lazy">
+        </div>
+        <div class="p-5">
+         <p data-template-id="setup-tag-4" class="canva-tag mb-3 inline-block rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"></p>
+         <h3 data-template-id="setup-title-4" class="canva-text font-bold"></h3>
+         <p data-template-id="setup-description-4" class="canva-text mt-3 text-sm leading-6"></p>
+        </div>
+       </article>
+      </div>
+      <div class="mt-10 flex items-center justify-center gap-2" aria-label="Indicador de página"><span id="dot-home" class="page-dot"></span> <span id="dot-setups" class="page-dot active"></span>
+      </div>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script src="/_sdk/22383239e6d7279e.editing_sdk.js" integrity="sha512-qvtUeUgPbBuWkcjob5tx6AGU1PQHkx4zgZWqqpaXOQqF0FGg35lPkDg2Eh+f2u6Np/H74EENvDhGRPcQgwZA+Q=="></script>
+  <script>
+    const views = {
+      home: document.getElementById("home-page"),
+      setups: document.getElementById("setups-page")
+    };
+
+    const navButtons = document.querySelectorAll("[data-page-target]");
+    const dots = {
+      home: document.getElementById("dot-home"),
+      setups: document.getElementById("dot-setups")
+    };
+
+    function changePage(pageName, moveFocus = true) {
+      Object.entries(views).forEach(([name, view]) => {
+        view.classList.toggle("active", name === pageName);
+      });
+
+      navButtons.forEach((button) => {
+        const isActive = button.dataset.pageTarget === pageName;
+        button.classList.toggle("active", isActive);
+        if (button.classList.contains("nav-link")) {
+          if (isActive) button.setAttribute("aria-current", "page");
+          else button.removeAttribute("aria-current");
+        }
+      });
+
+      Object.entries(dots).forEach(([name, dot]) => {
+        dot.classList.toggle("active", name === pageName);
+      });
+
+      if (moveFocus) {
+        const heading = pageName === "home"
+          ? document.getElementById("hero-title")
+          : document.getElementById("catalog-title");
+        heading.focus({ preventScroll: true });
+      }
+    }
+
+    navButtons.forEach((button) => {
+      button.addEventListener("click", () => changePage(button.dataset.pageTarget));
+    });
+
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
